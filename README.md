@@ -12,6 +12,7 @@ This application displays a list of newsletters, grouped by site. Users can view
 
 ## Directory Structure
 
+cat <<EOL > README.md
 \`\`\`
 .
 ├── src
@@ -23,6 +24,7 @@ This application displays a list of newsletters, grouped by site. Users can view
 │   └── utils
 └── README.md
 \`\`\`
+EOL
 
 ## User Mocks
 
@@ -107,8 +109,3 @@ Contains helper functions and common utilities used across the application.
 2. Install dependencies using \`npm install\`.
 3. Run the development server using \`npm run dev\`.
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## License
-
-This project is licensed under the MIT License.
-EOL
