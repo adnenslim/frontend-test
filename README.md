@@ -12,19 +12,8 @@ This application displays a list of newsletters, grouped by site. Users can view
 
 ## Directory Structure
 
-cat <<EOL > README.md
-\`\`\`
-.
-├── src
-│   ├── components
-│   ├── lib
-│   ├── mocks
-│   ├── pages
-│   ├── types
-│   └── utils
-└── README.md
-\`\`\`
-EOL
+echo -e "\`\`\`\n.\n├── src\n│   ├── components\n│   ├── lib\n│   ├── mocks\n│   ├── pages\n│   ├── types\n│   └── utils\n└── README.md\n\`\`\`" > README.md
+
 
 ## User Mocks
 
