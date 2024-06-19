@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Newsletter Application
 
-## Getting Started
+## Description
 
-First, run the development server:
+This application displays a list of newsletters, grouped by site. Users can view available newsletters and either sign up or subscribe depending on their access rights.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Display Newsletters**: Newsletters are grouped by site.
+- **Conditional CTA**: The call-to-action button changes based on user access rights.
+- **Random Users**: A random user is selected from three types of profiles each time the page loads.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Directory Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+\`\`\`
+.
+├── src
+│   ├── components
+│   ├── lib
+│   ├── mocks
+│   ├── pages
+│   ├── types
+│   └── utils
+└── README.md
+\`\`\`
 
-## Learn More
+## User Mocks
 
-To learn more about Next.js, take a look at the following resources:
+User mocks are defined with different subscription types.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Newsletter Mocks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Newsletters are defined with information such as title, description, image, site, and access rights.
 
-## Deploy on Vercel
+## Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Header
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Displays the page header with the title and description.
+
+### NewsletterImage
+
+Displays the image of a newsletter.
+
+### NewsletterItem
+
+Displays the information of a newsletter with a conditional CTA button.
+
+### NewslettersGroup
+
+Groups newsletters by site.
+
+### NewslettersPage
+
+Displays grouped newsletters and manages user state.
+
+## Utilities
+
+### getRandomUser
+
+Utility function to get a random user.
+
+### userHasAccess
+
+Utility function to check if the user has access to a newsletter.
+
+## Types
+
+### User
+
+Defines the structure of a user object.
+
+### NewsletterItem
+
+Defines the structure of a newsletter item.
+
+## Lib
+
+Contains helper functions and common utilities used across the application.
+
+## Technical Choices
+
+### Next.js
+
+- **Reason**: Next.js is a React framework that enables several key features, including server-side rendering and generating static websites. It is highly optimized for performance and developer experience.
+- **Advantage**: Improved performance, better SEO, and enhanced developer experience through built-in features like image optimization and API routes.
+
+### Tailwind CSS
+
+- **Reason**: Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs directly in your markup.
+- **Advantage**: Increased productivity and maintainability by reducing the need for custom CSS, and providing a consistent design system.
+
+### TypeScript
+
+- **Reason**: TypeScript is a superset of JavaScript that adds static typing, which helps catch errors early in the development process.
+- **Advantage**: Improved code quality and maintainability, better refactoring capabilities, and enhanced developer experience through type checking and autocomplete.
+
+### next/image
+
+- **Reason**: The \`next/image\` component provides built-in image optimization, allowing for automatic resizing, optimization, and serving of images in modern formats.
+- **Advantage**: Improved performance and reduced load times through optimized image loading.
+
+
+## How to Run
+
+1. Clone the repository.
+2. Install dependencies using \`npm install\`.
+3. Run the development server using \`npm run dev\`.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## License
+
+This project is licensed under the MIT License.
+EOL
