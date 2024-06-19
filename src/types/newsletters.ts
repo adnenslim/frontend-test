@@ -7,4 +7,6 @@ export interface NewsletterItem {
   subscriptions: string[];
 }
 
-export type GroupedNewsletters = Record<string, NewsletterItem[]>;
+export interface GroupedNewsletters {
+  [site: string]: NewsletterItem[];
+}
