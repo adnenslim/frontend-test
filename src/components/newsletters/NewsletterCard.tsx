@@ -1,8 +1,3 @@
-import {
-  USER_WITH_ONE_SUBSCRIPTION,
-  USER_WITH_MULTIPLE_SUBSCRIPTION,
-  USER_WITHOUT_SUBSCRIPTION,
-} from '@/mocks/user';
 import { NewsletterItem as NewsletterItemType } from '@/types/newsletters';
 import NewsletterImage from './NewsletterImage';
 import {

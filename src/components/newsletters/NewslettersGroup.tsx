@@ -12,7 +12,10 @@ const NewslettersGroup = ({
 }: NewslettersGroupProps) => (
   <section aria-labelledby={`heading-${site}`} className="mb-8">
     <div className="w-fit mb-6 text-neutral-900 uppercase">
-      <h2 id={`heading-${site}`} className="text-xl font-bold mb-3">
+      <h2
+        id={`heading-${site}`}
+        className="text-xl font-sans  font-bold mb-3"
+      >
         {site}
       </h2>
       <div className="w-2/3 border-t-4 border-red-600"></div>

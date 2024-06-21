@@ -1,4 +1,4 @@
-import { User } from '@/types/users';
+import { User } from '@/types/user';
 
 const BASE_USER = {
   id: '507f1f77bcf86cd799439011',

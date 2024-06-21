@@ -19,7 +19,8 @@ const config: Config = {
         subscriptionYellow: '#FFDD00',
       },
       fontFamily: {
-        merriweather: ['Merriweather', 'serif'],
+        merriweather: ['var(--font-merriweather)'],
+        sans: ['var(--font-source-sans-pro)'],
       },
     },
   },
